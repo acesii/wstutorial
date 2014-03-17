@@ -11,7 +11,11 @@ class PointsOfInterestController {
   def index() { 
     def result = [:]
     result.poi=poi
-    result
+    withFormat {
+      html result
+      json { render result as JSON }
+      xml { render books as XML }
+    }
   }
 
   def add() {
