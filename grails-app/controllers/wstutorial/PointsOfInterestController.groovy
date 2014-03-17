@@ -1,5 +1,7 @@
 package wstutorial
 
+import grails.converters.*
+
 class PointsOfInterestController {
   
   static poi = []
@@ -23,6 +25,11 @@ class PointsOfInterestController {
       poi.add(new_poi);
       result.poi = new_poi;
     }
-    result
+
+    withFormat {
+      html result
+      json { render result as JSON }
+      xml { render books as XML }
+    }
   }
 }

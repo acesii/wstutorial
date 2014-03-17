@@ -100,6 +100,9 @@ grails-app/views/showPostcode/index.gsp
 
 
 
-http://localhost:8080/wstutorial/pointsOfInterest/add?name=The+Red+Lion&postcode=S1+2ND
+curl "http://localhost:8080/wstutorial/pointsOfInterest/add?name=The+Red+Lion&postcode=S1+2ND"
 
+Add withformat processing to pointsOfInterest controller
+
+curl "http://localhost:8080/wstutorial/pointsOfInterest/add?name=The+Red+Lion&postcode=S1+2ND&format=json"
 
