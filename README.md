@@ -97,3 +97,9 @@ And a view
 grails-app/views/showPostcode/index.gsp
 
 
+
+
+
+http://localhost:8080/wstutorial/pointsOfInterest/add?name=The+Red+Lion&postcode=S1+2ND
+
+
